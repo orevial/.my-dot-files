@@ -1,0 +1,27 @@
+[alias]
+  st = status
+  a = add -A
+  co = commit -m
+  pl = pull --rebase
+  ps = push
+  lg = log -n 20 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  df = diff
+  remotes = ls-remote --heads origin
+  amend = commit --amend
+  who = shortlog -sne
+  oneline = log --pretty=oneline --abbrev-commit --graph
+  lc = !git oneline ORIG_HEAD.. --stat --no-merges
+  undo = git reset --soft HEAD^
+  changes = diff --name-status
+[user]
+  email = olivier.revial.external@airbus.fr
+  name = Olivier Revial
+        signingkey = FF5156B589142539
+[credential]
+        helper = cache
+[push]
+        default = matching
+[gpg]
+        program = gpg2
+[commit]
+        gpgsign = true
