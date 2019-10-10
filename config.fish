@@ -6,6 +6,7 @@ echo "Git abbreviations..."
 abbr ga 'git add -A'
 abbr gam 'git amend'
 abbr gb 'git branch'
+abbr gbl 'git branch --sort=-committerdate | head'
 abbr gc 'git commit -m'
 abbr gch 'git checkout'
 abbr gchb 'git checkout -b'
